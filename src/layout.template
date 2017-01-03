@@ -1,0 +1,15 @@
+<?php //-->
+
+use HandlebarsPHP\Data;
+use HandlebarsPHP\Runtime;
+
+return function($data = array()) {
+    $noop = function() {};
+    $context = $data = new Data($data);
+    $helper = Runtime::getHelpers($data);
+
+    $buffer = '';
+%s
+
+    return $buffer;
+};

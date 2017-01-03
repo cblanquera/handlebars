@@ -1,0 +1,32 @@
+{
+    "name": "cblanquera/handlebars.php",
+    "type": "library",
+    "description": "Ultra fast PHP7 implementation of handlebars.js with no baggage",
+    "minimum-stability": "dev",
+    "keywords": [
+        "template",
+        "handlebars",
+        "handlebars.js",
+        "handlebars.php"
+    ],
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Christian Blanquera",
+            "email": "cblanquera@openovate.com"
+        }
+    ],
+    "require-dev": {
+        "phpunit/phpunit": "~5.4",
+        "squizlabs/php_codesniffer": "~2.6",
+        "satooshi/php-coveralls": "^1.0"
+    },
+    "require": {
+        "php": ">=5.6.0"
+    },
+    "autoload": {
+        "psr-4": {
+            "HandlebarsPHP\\": "src/"
+        }
+    }
+}
